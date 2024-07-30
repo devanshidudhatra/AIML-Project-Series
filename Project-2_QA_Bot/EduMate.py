@@ -1,7 +1,7 @@
 import google.generativeai as genai
 import streamlit as st
 
-api_key = "GEMINI-API-KEY"
+api_key = "GEMINI-API-KEY" #Paste your api key here
 genai.configure(api_key=api_key)
 
 def answer(query):
