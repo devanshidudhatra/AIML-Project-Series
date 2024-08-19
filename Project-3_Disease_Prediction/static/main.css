@@ -1,0 +1,105 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Landing Page Styles */
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('/static/background.jpeg') no-repeat center center/cover;
+    backdrop-filter: blur(10px);
+}
+
+.title {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.title h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.start-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.start-button:hover {
+    background-color: #45a049;
+}
+
+/* Symptom Selection Page Styles */
+.symptom-columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.column {
+    width: 23%; /* Adjusted to fit four columns */
+}
+
+.form-group {
+    margin-bottom: 10px; /* Reduced spacing to fit more symptoms */
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+label {
+    margin-left: 8px;
+    font-size: 14px; /* Slightly smaller font for better fit */
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2); /* Slightly larger checkboxes for usability */
+}
+
+/* Button Styles */
+button {
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 20px auto;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Result Display */
+.result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #d32f2f;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #ffe5e5;
+    border-radius: 5px;
+}

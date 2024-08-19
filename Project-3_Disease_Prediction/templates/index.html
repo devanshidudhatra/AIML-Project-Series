@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <title>Disease Prediction</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Disease Prediction</h1>
+            {% if disease %}
+            <div id="result" class="result">Predicted Disease: {{ disease }}</div>
+            {% endif %}
+        </header>
+        <section class="symptom-selection">
+            <h2>Select Your Symptoms</h2>
+            <form method="POST">
+                <div class="symptom-columns">
+                    {% for i in range(0, symptoms|length, (symptoms|length//4) or 1) %}
+                    <div class="column">
+                        {% for symptom in symptoms[i:i + (symptoms|length//4) or 1] %}
+                        <div class="form-group">
+                            <input type="checkbox" id="{{ symptom }}" name="{{ symptom }}" value="1">
+                            <label for="{{ symptom }}">{{ symptom }}</label>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endfor %}
+                </div>
+                <button type="submit">Predict</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

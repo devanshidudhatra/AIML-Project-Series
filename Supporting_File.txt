@@ -1,0 +1,6 @@
+I have used api key of gemini to do projects. 
+If one has to run my codes and see the output then he or she first needs to provide their api key in the code.
+API key can be easily generated for free.
+Comment is provided that where api key should be entered.
+
+Thank You !!!!
